@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Roboto:wght@300&display=swap');
+
+:root {
+    --background-color: #00b0cf;
+    --text-color:   #003D47;
+    --header-color: #000000;
+    --contrast-color: #DC00E6;
+}
+
+body#about img {
+    height: 20r em;
+}
+
+body#portfolio img {
+    height: 15rem;
+}
+
+p {
+    max-width: 50em;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "head  head"
+        "nav nav"
+        "main  main"
+        "foot  foot";
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    line-height: 1.2;
+    font-size: 20px;
+    background-color: var( --background-color);
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+    color: var(--text-color);
+
+}
+
+@media screen and (min-width: 30em) {
+    body {
+        grid-template-areas: "head  nav""main  main""foot  foot";
+        grid-template-columns: 20rem 1fr;
+        grid-template-rows: auto 1 fr 1fr auto;
+        background-color: var( --background-color);
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+        color: var(--text-color);
+    }
+}
+
+body>* {
+    padding-left: 4rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body>header {
+    grid-area: head;
+    font-family: 'Antic Didone', serif;
+    color: var(--header-color);
+    /* background-color: red; */
+}
+
+/* this is the nav */
+body>nav {
+    grid-area: nav;
+    /* background-color: yellow; */
+}
+
+body>nav>ul {
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+body>nav>ul>li {
+    display: inline;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: underline;
+}
+
+:hover a {
+    color:var(--contrast-color);
+}
+/* this is main */
+body>main {
+    grid-area: main;
+    /* background-color: blue; */
+}
+
+/* this is footer */
+body>footer {
+    grid-area: foot;
+    /* background-color: green; */
+}
+
+header,
+footer {
+    padding-top: 1.33rem;
+    padding-bottom: 1.33rem;
+}
+
+header h1,
+footer h1 {
+    margin: 0;
+}
