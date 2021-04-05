@@ -1,0 +1,22 @@
+things that I need to evaluwase 
+Layout
+    Done. everything it too left side oreantated
+    Done. navigation chan be better placed, moved it over the the left more
+    Done. portfolio needs to be better expandable
+    Done. portfolio alighment needs fixing
+    Done. portfolio text needs to alighn with image
+Typography
+    Done. text can be a bit larger
+Images
+    need some more Images
+    Done. need alt text
+    favicon
+Colors
+  Done.  need a new background color.
+    Done. header text needs some color to distiguase h1's and h2's
+Cross-Browser
+    check all layouts in responsivly
+    check in
+        firefox
+        crome
+        safari

@@ -1,18 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Roboto:wght@300&display=swap');
 
 :root {
-    --background-color: #00b0cf;
-    --text-color:   #003D47;
+    --background-color: #38e1ff;
+    --text-color: #FFF;
     --header-color: #000000;
-    --contrast-color: #DC00E6;
+    --contrast-color: #000;
+    --h2-color:#FFF;
+    --h3-color:#ededed;
 }
 
 body#about img {
-    height: 20r em;
+    height: 20rem;
+    float: left;
+    margin-right: 20px;
 }
 
 body#portfolio img {
-    height: 15rem;
+    height: 20rem;
+}
+body#portfolio p {
+    max-width: 27rem;
+}
+
+body#resume>main>h2 {
+    text-indent: 1rem;
+    color: var(--h2-color);
+}
+
+body#resume>main>h3 {
+    text-indent: 2rem;
+    color: var(--h3-color);
+}
+
+body#resume>main>p {
+    text-indent: 4rem;
+}
+
+body#resume>main>ul {
+    margin-left: 2rem;
 }
 
 p {
@@ -30,7 +55,7 @@ body {
     grid-template-rows: auto auto 1fr auto;
     line-height: 1.2;
     font-size: 20px;
-    background-color: var( --background-color);
+    background-color: var(--background-color);
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
     color: var(--text-color);
 
@@ -38,10 +63,13 @@ body {
 
 @media screen and (min-width: 30em) {
     body {
-        grid-template-areas: "head  nav""main  main""foot  foot";
+        grid-template-areas:
+            "head  nav"
+            "main  main"
+            "foot  foot";
         grid-template-columns: 20rem 1fr;
         grid-template-rows: auto 1 fr 1fr auto;
-        background-color: var( --background-color);
+        background-color: var(--background-color);
         background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
         color: var(--text-color);
     }
@@ -63,6 +91,7 @@ body>header {
 /* this is the nav */
 body>nav {
     grid-area: nav;
+    padding-left: 0;
     /* background-color: yellow; */
 }
 
@@ -80,11 +109,13 @@ a {
     text-decoration: underline;
 }
 
-:hover a {
-    color:var(--contrast-color);
+a:hover {
+    color: var(--contrast-color);
 }
+
 /* this is main */
 body>main {
+    border-top: 2px solid black;
     grid-area: main;
     /* background-color: blue; */
 }
@@ -104,4 +135,23 @@ footer {
 header h1,
 footer h1 {
     margin: 0;
+}
+
+
+#portfolioList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfolioList>li {
+    margin: 2rem 3rem;
+    list-style-type: none;
+}
+
+#portfolio p, #about p{
+    font-size: 23px;
+}
+
+#protfolio > li{
+    max-width: 10rem;
 }
