@@ -22,21 +22,21 @@ body#portfolio p {
     max-width: 27rem;
 }
 
-body#resume>main>h2 {
+body#resume>main>reveal-elements>h2 {
     text-indent: 1rem;
     color: var(--h2-color);
 }
 
-body#resume>main>h3 {
+body#resume>main>reveal-elements>h3 {
     text-indent: 2rem;
     color: var(--h3-color);
 }
 
-body#resume>main>p {
+body#resume>main>reveal-elements>p {
     text-indent: 4rem;
 }
 
-body#resume>main>ul {
+body#resume>main>reveal-elements>ul {
     margin-left: 2rem;
 }
 

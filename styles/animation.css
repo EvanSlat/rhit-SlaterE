@@ -10,7 +10,7 @@
             -ms-transform: translateX(-40px);
              -o-transform: translateX(-40px);
                     transform: translateX(-40px);
-    -webkit-transition: all var(--speed) ease-out;
+     -webkit-transition: all var(--speed) ease-out;
          -moz-transition: all var(--speed) ease-out;
             -ms-transition: all var(--speed) ease-out;
              -o-transition: all var(--speed) ease-out;
