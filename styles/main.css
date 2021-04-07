@@ -7,6 +7,7 @@
     --contrast-color: #000;
     --h2-color:#FFF;
     --h3-color:#ededed;
+    --speed:1.0s;
 }
 
 body#about img {
@@ -22,21 +23,21 @@ body#portfolio p {
     max-width: 27rem;
 }
 
-body#resume>main>reveal-elements>h2 {
+body#resume>main>#reveal-elements>h2 {
     text-indent: 1rem;
     color: var(--h2-color);
 }
 
-body#resume>main>reveal-elements>h3 {
+body#resume>main>#reveal-elements>h3 {
     text-indent: 2rem;
     color: var(--h3-color);
 }
 
-body#resume>main>reveal-elements>p {
+body#resume>main>#reveal-elements>p {
     text-indent: 4rem;
 }
 
-body#resume>main>reveal-elements>ul {
+body#resume>main>#reveal-elements>ul {
     margin-left: 2rem;
 }
 
