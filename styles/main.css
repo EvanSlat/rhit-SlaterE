@@ -23,6 +23,8 @@ body#portfolio p {
     max-width: 27rem;
 }
 
+
+/* resumey things */
 body#resume>main>h2 {
     text-indent: 1rem;
     color: var(--h2-color);
